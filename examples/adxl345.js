@@ -1,5 +1,5 @@
 var Board = require("../lib/firmata").Board;
-var SerialPort = require("serialport");
+var SerialPort = require("serialport-electron");
 var rport = /usb|acm|^com/i;
 
 SerialPort.list(function(err, ports) {

@@ -1,5 +1,5 @@
-var SerialPort = require("serialport");
-var five = require("johnny-five");
+var SerialPort = require("serialport-electron");
+var five = require("johnny-five-electron");
 var Firmata = require("../");
 
 SerialPort.list(function(error, list) {
@@ -25,4 +25,3 @@ SerialPort.list(function(error, list) {
     led.blink(500);
   });
 });
-
